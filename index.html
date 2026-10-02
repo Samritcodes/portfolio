@@ -1402,14 +1402,17 @@
 <body data-mode="gallery" data-menu="closed">
   <main class="stage" aria-label="Interactive developer portfolio library">
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Samrit Kumar Bhutia portfolio home">Samrit Kumar Bhutia</a>
-      <div class="nav-actions">
-        <button class="icon-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
-          <span class="menu-glyph" aria-hidden="true"></span>
-        </button>
-        <button class="ticket-button" type="button" data-toast="Three volumes available. Choose any volume to inspect.">The Archive</button>
-      </div>
-    </header>
+  <a href="#" class="brand">Samrit Kumar Bhutia</a>
+  <div class="nav-actions">
+    <!-- Contact Button directly triggers your email -->
+    <a href="mailto:samritonline@gmail.com" class="ticket-button" style="text-decoration:none;">
+      Get in Touch
+    </a>
+    <button class="icon-button" id="menuToggle" aria-label="Toggle menu">
+      <div class="menu-glyph"></div>
+    </button>
+  </div>
+</header>
 
     <h1 class="hero-word" aria-hidden="true">Archive</h1>
 
@@ -1999,5 +2002,16 @@
       });
     })();
   </script>
+    <!-- Fixed Bottom Contact Badge -->
+  <div style="position: fixed; z-index: 99; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; align-items: center; background: rgba(30, 26, 20, 0.85); backdrop-filter: blur(10px); border: 1px solid rgba(195, 164, 123, 0.3); padding: 8px 18px; border-radius: 999px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+    <span style="font-size: 13px; color: var(--muted); letter-spacing: 0.04em;">Get in touch:</span>
+    <a href="mailto:samritonline@gmail.com" style="color: var(--text); font-weight: 600; text-decoration: none; font-size: 13px; display: inline-flex; align-items: center; gap: 5px;">
+      ✉️ samritonline@gmail.com
+    </a>
+    <span style="color: rgba(255,255,255,0.2);">|</span>
+    <a href="https://github.com/Samritcodes" target="_blank" rel="noopener" style="color: var(--pink); text-decoration: none; font-size: 13px;">
+      GitHub
+    </a>
+  </div>
 </body>
 </html>
