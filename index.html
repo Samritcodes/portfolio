@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#29251d">
   <meta
     name="description"
-    content="Samrit Kumar Bhutia — Full-Stack AI Engineer & Creative Software Developer Portfolio"
+    content="Samrit Kumar Bhutia — B.Tech CSE, AI/ML & IIoT Intern, Full-Stack Developer Portfolio"
   >
   <title>Samrit Kumar Bhutia — Field Manuals</title>
   
@@ -726,6 +726,60 @@
       line-height: 1.58;
     }
 
+    /* Structured Experience & Education Cards */
+    .timeline-card {
+      padding: 16px;
+      border: 1px solid rgba(220, 200, 164, .2);
+      border-radius: 12px;
+      background: rgba(52, 48, 37, .45);
+      margin-bottom: 12px;
+      transition: background 200ms ease, border-color 200ms ease, transform 200ms var(--ease);
+    }
+
+    .timeline-card:hover {
+      background: rgba(62, 56, 42, .65);
+      border-color: rgba(220, 200, 164, .38);
+      transform: translateY(-2px);
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .timeline-title {
+      color: #f2e7cf;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .timeline-badge {
+      font-size: 11px;
+      color: var(--pink-bright);
+      background: rgba(0, 0, 0, .3);
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-family: ui-monospace, monospace;
+    }
+
+    .timeline-sub {
+      color: var(--muted);
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .timeline-desc {
+      color: var(--text);
+      font-size: 13.5px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
     /* Interactive Project Cards inside Book 2 */
     .project-entry {
       padding: 16px;
@@ -805,10 +859,6 @@
       font-size: 12px;
       line-height: 1.58;
       white-space: pre-wrap;
-    }
-
-    .doc-review {
-      margin: 0;
     }
 
     .meta-row {
@@ -894,12 +944,12 @@
       justify-content: center;
       min-width: 0;
       min-height: 58px;
-      padding: 0 18px;
+      padding: 0 16px;
       border-radius: 24px;
       background: var(--periwinkle);
       color: #2e261d;
       cursor: pointer;
-      font-size: 15px;
+      font-size: 14px;
       font-style: italic;
       font-weight: 700;
       white-space: nowrap;
@@ -913,13 +963,18 @@
     }
 
     .pill.language {
-      gap: 10px;
+      gap: 8px;
       background: var(--paper);
     }
 
-    .pill.language svg {
-      width: 19px;
-      height: 19px;
+    .pill.linkedin {
+      gap: 8px;
+      background: #0077b5;
+      color: #ffffff;
+    }
+
+    .pill.linkedin:hover {
+      filter: brightness(1.15);
     }
 
     .pill.icon-only {
@@ -1062,11 +1117,11 @@
     .menu-link {
       display: inline-block;
       color: var(--pink);
-      font-size: clamp(52px, 7vw, 98px);
+      font-size: clamp(44px, 6vw, 84px);
       font-style: italic;
       font-weight: 500;
       letter-spacing: -.055em;
-      line-height: 1.05;
+      line-height: 1.1;
       text-decoration: none;
       transform: translateY(24px);
       transition: color 200ms ease, transform 500ms var(--ease);
@@ -1295,7 +1350,7 @@
       }
 
       .pill {
-        min-width: 132px;
+        min-width: 120px;
       }
 
       .pill.icon-only {
@@ -1354,9 +1409,9 @@
 
       .pill {
         min-width: 0;
-        min-height: 54px;
+        min-height: 52px;
         padding: 0 10px;
-        font-size: 12px;
+        font-size: 11px;
       }
 
       .pill.language svg {
@@ -1402,22 +1457,22 @@
 <body data-mode="gallery" data-menu="closed">
   <main class="stage" aria-label="Interactive developer portfolio library">
     <header class="topbar">
-  <a href="#" class="brand">Samrit Kumar Bhutia</a>
-  <div class="nav-actions">
-    <!-- Contact Button directly triggers your email -->
-    <a href="mailto:samritonline@gmail.com" class="ticket-button" style="text-decoration:none;">
-      Get in Touch
-    </a>
-    <button class="icon-button" id="menuToggle" aria-label="Toggle menu">
-      <div class="menu-glyph"></div>
-    </button>
-  </div>
-</header>
+      <a href="#" class="brand">Samrit Kumar Bhutia</a>
+      <div class="nav-actions">
+        <!-- Contact Button -->
+        <a href="mailto:samritonline@gmail.com" class="ticket-button" style="text-decoration:none;">
+          Get in Touch
+        </a>
+        <button class="icon-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+          <div class="menu-glyph"></div>
+        </button>
+      </div>
+    </header>
 
     <h1 class="hero-word" aria-hidden="true">Archive</h1>
 
     <section class="gallery" aria-label="Portfolio field manuals">
-      <!-- BOOK 1: INTRODUCTION -->
+      <!-- BOOK 1: IDENTITY, INTERNSHIPS & EDUCATION -->
       <button
         class="book-card"
         type="button"
@@ -1442,7 +1497,7 @@
               <span class="cover-title">Identity</span>
               <span class="cover-subtitle">Samrit Kumar Bhutia</span>
               <span></span>
-              <span class="cover-footer">AI · Full-Stack · Systems</span>
+              <span class="cover-footer">AI/ML · IIoT · Full-Stack</span>
             </span>
           </span>
           <span class="open-badge">Open</span>
@@ -1472,9 +1527,9 @@
             <span class="cover-copy">
               <span class="cover-kicker">Field Manual · II</span>
               <span class="cover-title">Projects</span>
-              <span class="cover-subtitle">Autonomous Code & Vision</span>
+              <span class="cover-subtitle">Vision & Autonomous Code</span>
               <span></span>
-              <span class="cover-footer">Selected Works · 2026</span>
+              <span class="cover-footer">Selected Works · 2024–2026</span>
             </span>
           </span>
           <span class="open-badge">Inspect</span>
@@ -1524,12 +1579,12 @@
         <div id="detailCustomArea"></div>
 
         <section class="doc-section" aria-labelledby="firstPromptLabel">
-          <p class="doc-label" id="firstPromptLabel">Philosophy & Focus</p>
+          <p class="doc-label" id="firstPromptLabel">Career Objective & Philosophy</p>
           <div class="prompt-block"><code id="detailPrompt"></code></div>
         </section>
 
         <section class="doc-section" aria-labelledby="reviewLabel">
-          <p class="doc-label" id="reviewLabel">Transmission & Status</p>
+          <p class="doc-label" id="reviewLabel">Direct Coordinates</p>
           <p class="doc-review" id="detailReview"></p>
         </section>
       </div>
@@ -1546,13 +1601,17 @@
         <hr class="detail-rule">
         <div class="action-rail" aria-label="Field manual actions">
           <a class="pill language" id="githubLink" href="https://github.com/Samritcodes" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" style="width:18px;height:18px;">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
-            GitHub Profile
+            GitHub
+          </a>
+          <a class="pill linkedin" href="https://www.linkedin.com/in/samrit-kumar-bhutia-2abb0b293" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in" style="font-size:15px;"></i>
+            LinkedIn
           </a>
           <a class="pill" id="actionPrimary" href="mailto:samritonline@gmail.com">
-            Initiate Comms
+            Email
           </a>
           <button class="pill icon-only" id="saveButton" type="button" aria-label="Bookmark manual" aria-pressed="false">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -1582,49 +1641,95 @@
     <!-- SITE MENU -->
     <nav class="menu-layer" id="menuLayer" aria-label="Site menu" inert>
       <ul class="menu-list">
-        <li><a class="menu-link" href="#" data-menu-action="intro">I. Identity</a></li>
+        <li><a class="menu-link" href="#" data-menu-action="intro">I. Identity & Journey</a></li>
         <li><a class="menu-link" href="#" data-menu-action="projects">II. Projects</a></li>
-        <li><a class="menu-link" href="#" data-menu-action="skills">III. Skills</a></li>
-        <li><a class="menu-link" href="https://github.com/Samritcodes" target="_blank" rel="noopener" class="menu-link"class="menu-link">GitHub</a></li>
-        <li><a class="menu-link" href="mailto:samritonline@gmail.com" class="menu-link">Contact</a></li>
+        <li><a class="menu-link" href="#" data-menu-action="skills">III. Skills & Arsenal</a></li>
+        <li><a class="menu-link" href="https://www.linkedin.com/in/samrit-kumar-bhutia-2abb0b293" target="_blank" rel="noopener" onclick="window.open(this.href, '_blank');">LinkedIn</a></li>
+        <li><a class="menu-link" href="https://github.com/Samritcodes" target="_blank" rel="noopener" onclick="window.open(this.href, '_blank');">GitHub</a></li>
+        <li><a class="menu-link" href="mailto:samritonline@gmail.com" onclick="window.location.href='mailto:samritonline@gmail.com';">Contact</a></li>
       </ul>
     </nav>
   </main>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <!-- FIXED BOTTOM CONTACT BADGE -->
+  <div style="position: fixed; z-index: 99; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 14px; align-items: center; background: rgba(29, 26, 21, 0.92); backdrop-filter: blur(12px); border: 1px solid rgba(195, 164, 123, 0.35); padding: 9px 24px; border-radius: 999px; box-shadow: 0 12px 35px rgba(0,0,0,0.55); font-size: 13px; max-width: calc(100vw - 32px); overflow-x: auto;">
+    <span style="color: var(--muted); display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;">📍 Odisha, India</span>
+    <span style="color: rgba(255,255,255,0.2);">|</span>
+    <a href="mailto:samritonline@gmail.com" style="color: var(--text); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
+      ✉️ samritonline@gmail.com
+    </a>
+    <span style="color: rgba(255,255,255,0.2);">|</span>
+    <a href="https://www.linkedin.com/in/samrit-kumar-bhutia-2abb0b293" target="_blank" rel="noopener" style="color: #60a5fa; font-weight: 600; text-decoration: none; white-space: nowrap;">
+      LinkedIn
+    </a>
+    <span style="color: rgba(255,255,255,0.2);">|</span>
+    <a href="https://github.com/Samritcodes" target="_blank" rel="noopener" style="color: var(--pink); font-weight: 600; text-decoration: none; white-space: nowrap;">
+      GitHub
+    </a>
+  </div>
+
   <script>
     (() => {
       // Data dictionary for the 3 Books
       const books = {
         intro: {
-          title: "Volume I · Identity",
-          year: "2026",
+          title: "Volume I · Identity & Journey",
+          year: "2023 — Present",
           kicker: "Field Manual · I",
           description:
-            "I am Samrit Kumar Bhutia — a Full-Stack AI Engineer and Creative Software Developer. I engineer deep learning diagnostic platforms, autonomous developer agent loops, and high-performance web systems.",
-          steps: [
+            "Samrit Kumar Bhutia — B.Tech Computer Science & Engineering undergraduate at GIFT Autonomous (BPUT), Bhubaneswar with an 8.2 CGPA. Passionate about AI/ML pipelines, Industrial IoT implementations, and resilient full-stack systems.",
+          
+          // Work Experience / Internships
+          experiences: [
             {
-              title: "Foundation & Specialization",
-              body: "B.Tech in Computer Science with a strong background in applied Computer Vision, full-stack architectures, and autonomous LLM workflows."
+              role: "Industrial Internet of Things (IIoT) Intern",
+              company: "SDI (Skill Development Institute), Bhubaneswar",
+              period: "July 2024 (1 Month)",
+              desc: "Architected and engineered a Mendix-based Industrial IoT prototype demonstrating real-world sensor telemetry and edge monitoring applications."
             },
             {
-              title: "The Engineering Craft",
-              body: "I bridge complex mathematical algorithms and high-speed tensor inference with silky, responsive, human-centered interfaces."
-            },
-            {
-              title: "Active Horizons",
-              body: "Exploring production convolutional neural networks (ResNet), agentic CI/CD pipelines, and robust full-stack applications with MERN & FastAPI."
-            },
-            {
-              title: "Open Availability",
-              body: "Available for full-time engineering roles, AI projects, and visionary software initiatives across the globe."
+              role: "Artificial Intelligence & Machine Learning (AI/ML) Intern",
+              company: "CTTC (Central Tool Room & Training Centre), Bhubaneswar",
+              period: "June 2025 – July 2025 (45 Days)",
+              desc: "Explored and implemented core Machine Learning and Deep Learning architectures, conducting hands-on training, hyperparameter optimization, and computer vision models."
             }
           ],
+
+          // Educational Background
+          education: [
+            {
+              degree: "B.Tech in Computer Science & Engineering",
+              school: "GIFT Autonomous, Bhubaneswar (BPUT Affiliated)",
+              score: "8.2 CGPA",
+              period: "2023 — Present"
+            },
+            {
+              degree: "Intermediate 12th (CBSE)",
+              school: "Jawahar Navodaya Vidyalaya, Angul",
+              score: "70%",
+              period: "Completed 2023"
+            },
+            {
+              degree: "Matriculation 10th (CBSE)",
+              school: "Jawahar Navodaya Vidyalaya, Dhenkanal",
+              score: "85%",
+              period: "Completed 2021"
+            }
+          ],
+
+          // Certifications
+          certs: [
+            "Introduction to IoT (12 Weeks — IIT Kharagpur, NPTEL)",
+            "Industrial IoT 4.0 (12 Weeks — IIT Kharagpur, NPTEL)",
+            "Computer Networks and Internet (12 Weeks — IIT Kharagpur, NPTEL)"
+          ],
+
           prompt:
-            "Engineer systems that are not only computationally sound, but structurally resilient, beautiful to use, and purposeful.",
+            "\"To contribute to meaningful software projects, turn ideas into practical solutions, and keep growing as a developer through curiosity, consistency, and a passion for learning.\"",
           review:
-            "Location: India • Global & Remote Ready • Direct transmission: samritonline@gmail.com • GitHub: github.com/Samritcodes"
+            "Phone: +91 8260212181 • Email: samritonline@gmail.com / sbhutia2023@gift.edu.in • Pitiri, Dhenkanal, Odisha - 759120"
         },
         projects: {
           title: "Volume II · Selected Works",
@@ -1635,8 +1740,20 @@
           // Rich interactive project cards with direct GitHub links
           projectsList: [
             {
-              title: "AgriSense AI — Foliage Crop Pathology Engine",
-              desc: "Sub-second agricultural diagnostic engine powered by a fine-tuned ResNet CNN. Identifies 28 foliar crop pathologies in < 200ms with differential diagnosis, spray dosage calculators, and 2.5x virtual microscope.",
+              title: "AI Resume Checker & ATS Optimizer",
+              desc: "Full-stack MERN application integrated with Google Gemini AI. Evaluates resumes against ATS parsers, calculates granular compatibility scores (0–100), and generates context-aware rewrite suggestions.",
+              tags: ["Google Gemini AI", "MERN Stack", "pdf-parse", "Tailwind CSS"],
+              link: "https://github.com/Samritcodes/AI-Resume-Checker"
+            },
+            {
+              title: "Plant Disease Detection System (CNN)",
+              desc: "Deep Learning foliage diagnostic system utilizing Convolutional Neural Networks (CNN) with a FastAPI backend. Delivers real-time image diagnosis for plant leaf pathologies in seconds.",
+              tags: ["Deep Learning (CNN)", "FastAPI", "Python", "Computer Vision"],
+              link: "https://github.com/Samritcodes/AgriSense"
+            },
+            {
+              title: "AgriSense AI — Crop Pathology Engine",
+              desc: "Sub-second agricultural diagnostic engine powered by fine-tuned ResNet CNN. Identifies 28 foliar crop pathologies in < 200ms with differential diagnosis, spray dosage calculators, and virtual microscope.",
               tags: ["React 19", "FastAPI", "TensorFlow", "ResNet", "Tailwind v4"],
               link: "https://github.com/Samritcodes/AgriSense"
             },
@@ -1645,12 +1762,6 @@
               desc: "Automated agent workflow that assigns daily LeetCode/DSA problems, waits for developer git commits, evaluates time/space complexity, and auto-generates comprehensive repository documentation.",
               tags: ["GitHub Actions", "Node.js", "Agentic Loop", "DSA"],
               link: "https://github.com/Samritcodes/CodeSprint-AI"
-            },
-            {
-              title: "AI Resume & ATS Checker",
-              desc: "Full-stack MERN platform that extracts text from PDF resumes, scores ATS readiness (0–100) using Google Gemini AI, identifies weak points, and rewrites bullet points with side-by-side diff tracking.",
-              tags: ["Google Gemini AI", "MERN Stack", "pdf-parse", "Tailwind"],
-              link: "https://github.com/Samritcodes/AI-Resume-Checker"
             },
             {
               title: "EcoTrack — Gamified Carbon Footprint Engine",
@@ -1687,27 +1798,27 @@
           year: "2026 Edition",
           kicker: "Field Manual · III",
           description:
-            "A comprehensive index of programming languages, deep learning frameworks, frontend ecosystems, backends, databases, and DevOps tools.",
+            "A structured breakdown of core programming languages, machine learning frameworks, full-stack stacks, databases, and development tooling.",
           steps: [
             {
               title: "Languages & Foundational Paradigms",
-              body: "Python, JavaScript (ESNext), TypeScript, C, HTML5, modern CSS / Tailwind, SQL."
+              body: "Python, JavaScript (ESNext), TypeScript, C, HTML5, modern CSS / Tailwind, SQL, Java"
             },
             {
               title: "Machine Learning & Computer Vision",
-              body: "TensorFlow / Keras, ResNet, OpenCV, Scikit-Learn, Google Gemini AI API, FastAPI Tensor Inferences."
+              body: "TensorFlow / Keras, ResNet, OpenCV, Scikit-Learn, Google Gemini AI API, FastAPI Tensor Inferences, NumPy, Pandas, Matplotlib, Jupyter Notebook"
             },
             {
               title: "Frontend Engineering & Creative Tech",
-              body: "React 19, Next.js, Vite, Three.js, Tailwind CSS."
+              body: "React 19, Next.js, Vite, Three.js, Tailwind CSS"
             },
             {
               title: "Backend Architecture & Databases",
-              body: "Node.js, Express.js, FastAPI, MongoDB (Mongoose), PostgreSQL, RESTful API design, JWT auth."
+              body: "Node.js, Express.js, FastAPI, MongoDB (Mongoose), PostgreSQL, MySQL, Redis, RESTful API design, JWT auth"
             },
             {
               title: "DevOps & Tooling Workflows",
-              body: "Docker(Basics), GitHub Actions CI/CD, Git, Postman, Vercel, Netlify."
+              body: "Docker (basics), GitHub Actions CI/CD, Git, Postman, Vercel, Netlify, Mendix (IIoT)"
             }
           ],
           prompt:
@@ -1831,8 +1942,69 @@
         detailYear.textContent = data.year;
         detailKicker.textContent = data.kicker;
 
-        // Render projects list for Book 2 or structured steps for Books 1 & 3
         detailCustomArea.innerHTML = "";
+
+        // BOOK 1: RENDER INTERNSHIPS, EDUCATION, AND CERTIFICATIONS
+        if (data.experiences) {
+          // Internships Section
+          const expSection = document.createElement("section");
+          expSection.className = "doc-section";
+          expSection.innerHTML = `
+            <p class="doc-label">Work Experience & Internships</p>
+            <div>
+              ${data.experiences.map(e => `
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <span class="timeline-title">${e.role}</span>
+                    <span class="timeline-badge">${e.period}</span>
+                  </div>
+                  <div class="timeline-sub">${e.company}</div>
+                  <p class="timeline-desc">${e.desc}</p>
+                </div>
+              `).join('')}
+            </div>
+          `;
+          detailCustomArea.appendChild(expSection);
+
+          // Education Section
+          const eduSection = document.createElement("section");
+          eduSection.className = "doc-section";
+          eduSection.innerHTML = `
+            <p class="doc-label">Education Timeline</p>
+            <div>
+              ${data.education.map(ed => `
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <span class="timeline-title">${ed.degree}</span>
+                    <span class="timeline-badge">${ed.score}</span>
+                  </div>
+                  <div class="timeline-sub">${ed.school} • ${ed.period}</div>
+                </div>
+              `).join('')}
+            </div>
+          `;
+          detailCustomArea.appendChild(eduSection);
+
+          // Certifications Section
+          const certSection = document.createElement("section");
+          certSection.className = "doc-section";
+          certSection.innerHTML = `
+            <p class="doc-label">IIT Kharagpur (NPTEL) Certifications</p>
+            <ol class="doc-steps">
+              ${data.certs.map(c => `
+                <li>
+                  <span class="doc-step-copy">
+                    <strong>${c}</strong>
+                    <span>Verified 12-week national curriculum accreditation.</span>
+                  </span>
+                </li>
+              `).join('')}
+            </ol>
+          `;
+          detailCustomArea.appendChild(certSection);
+        }
+
+        // BOOK 2: RENDER PROJECTS LIST
         if (data.projectsList) {
           const section = document.createElement("section");
           section.className = "doc-section";
@@ -1856,11 +2028,14 @@
             </div>
           `;
           detailCustomArea.appendChild(section);
-        } else if (data.steps) {
+        } 
+        
+        // BOOK 3: RENDER SKILLS PILLARS
+        if (data.steps) {
           const section = document.createElement("section");
           section.className = "doc-section";
           section.innerHTML = `
-            <p class="doc-label">Core Pillars</p>
+            <p class="doc-label">Technical Pillars & Stacks</p>
             <ol class="doc-steps">
               ${data.steps.map(s => `
                 <li>
@@ -2002,16 +2177,5 @@
       });
     })();
   </script>
-    <!-- Fixed Bottom Contact Badge -->
-  <div style="position: fixed; z-index: 99; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; align-items: center; background: rgba(30, 26, 20, 0.85); backdrop-filter: blur(10px); border: 1px solid rgba(195, 164, 123, 0.3); padding: 8px 18px; border-radius: 999px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-    <span style="font-size: 13px; color: var(--muted); letter-spacing: 0.04em;">Get in touch:</span>
-    <a href="mailto:samritonline@gmail.com" style="color: var(--text); font-weight: 600; text-decoration: none; font-size: 13px; display: inline-flex; align-items: center; gap: 5px;">
-      ✉️ samritonline@gmail.com
-    </a>
-    <span style="color: rgba(255,255,255,0.2);">|</span>
-    <a href="https://github.com/Samritcodes" target="_blank" rel="noopener" style="color: var(--pink); text-decoration: none; font-size: 13px;">
-      GitHub
-    </a>
-  </div>
 </body>
 </html>
